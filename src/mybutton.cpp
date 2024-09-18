@@ -1,6 +1,5 @@
 #include "mybutton.h"
 #include <QMouseEvent>
-#include <QDebug>
 #include <QPixmap>
 #include <QMessageBox>
 #include <QMediaPlayer>

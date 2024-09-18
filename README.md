@@ -46,3 +46,15 @@ xmake run <target>
 
 然后，就能看到一个 Qt Widget 程序正确的运行了，比使用 Qt Creator 不知道轻量了多少倍。
 
+# 更多细节
+
+TODO：目前仅放出参考链接，后续继续研究并形成总结文档。
+
+## 使用 Vscode + Qt + Terminal 开发
+
+参考：[https://xmake.io/#/plugin/more_plugins?id=configure-intellsence](https://xmake.io/#/plugin/more_plugins?id=configure-intellsence)
+
+## Windows 无法向控制台输出文字内容
+
+参考：[https://github.com/xmake-io/xmake/issues/3371](https://github.com/xmake-io/xmake/issues/3371)
+

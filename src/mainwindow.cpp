@@ -3,7 +3,6 @@
 #include <QTimer>
 #include <QMessageBox>
 #include <QRandomGenerator>
-#include <QDebug>
 #include <QProcess>
 #include <QMouseEvent>
 
@@ -221,7 +220,6 @@ void MainWindow::_init_Mines()
             continue;
         }
         this->_mines.append(mine);
-        //        qDebug() << "(" << mine[0] << "," << mine[1] << ")";//测试雷 打印坐标
     }
 }
 
@@ -242,7 +240,7 @@ void MainWindow::bindMines()
 void MainWindow::reStartGame()
 {
     qApp->closeAllWindows();
-    QProcess::startDetached(qApp->applicationFilePath());
+    QProcess::startDetached(qApp->applicationFilePath(), QStringList());
 }
 
 void MainWindow::_initAllBlanks()
