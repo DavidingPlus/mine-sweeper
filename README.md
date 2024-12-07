@@ -14,14 +14,16 @@ XMake 默认会自动探测 Qt 环境，当然也可以指定 Qt SDK 环境目�
 
 > 注：以下的命令均在项目根目录执行，XMake 帮我们处理好了目录管理，会自动创建配置缓存目录，例如 .xmake 和 build，不用我们担心。
 
+这里以 Debug 构建模式为例。
+
 ```bash
-xmake f --qt=D:\Qt\5.15.2\
+xmake f -m debug --qt=D:\Qt\5.15.2\
 ```
 
 如果想要使用 Windows 下 MingW 的 Qt 环境，可以切到 mingw 的平台配置，并且指定下 mingw 编译环境的 sdk 路径即可，例如：
 
 ```bash
-xmake f -p mingw --sdk=D:\Qt\Tools\mingw810_64\
+xmake f -m debug -p mingw --sdk=D:\Qt\Tools\mingw810_64\
 ```
 
 当然我的机器上只安装了 Qt 5.15.2 版本的 Mingw 环境，因此我选择第二个。
